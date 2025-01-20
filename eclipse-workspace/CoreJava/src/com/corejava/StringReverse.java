@@ -7,7 +7,7 @@ import java.util.List;
 
 public class StringReverse {
 
-	@SuppressWarnings("unlikely-arg-type")
+	//@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
