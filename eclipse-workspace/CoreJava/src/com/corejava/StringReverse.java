@@ -35,7 +35,7 @@ public class StringReverse {
 	li.set(6,8);
 	System.out.println(li);
 
-	System.out.println(li.lastIndexOf(6));
+	//System.out.println(li.lastIndexOf(6));
 	System.out.println(li.reversed());
 	//li.set(0, null);
 	//li.spliterator();
