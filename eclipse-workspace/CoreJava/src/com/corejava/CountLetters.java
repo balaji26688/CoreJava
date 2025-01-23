@@ -6,6 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class CountLetters {
 	
@@ -144,7 +145,38 @@ String str="Welcome to Infosys";
 		return true;
 	}
 	
-
+public static void StringDuplicateRemove()
+{
+	String str="aajjkksllsdgrevkfvddgv";
+	/* char []ch=str.toCharArray();
+	Set<Character> set=new TreeSet<Character>();
+	
+	for(char c:ch)
+	{
+		set.add(c);
+	}
+	System.out.println(set); */
+	
+	String target="";
+	
+	for(int i=0;i<str.length();i++)
+	{
+		char  temp=str.charAt(i);
+		
+		if(temp !=' ')
+		{
+			if(target.indexOf(temp)<=-1)
+			{
+				target=target+temp;
+			}
+		}else {
+			target=target+' ';
+		}
+	}
+	target.trim();
+	System.out.println(target);
+	
+}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -157,6 +189,7 @@ String str="Welcome to Infosys";
 		//pringNumbersOnlyInString();
 		//printOnlyAlphabetsInString();
 		//isPalindrome("madam");
+		StringDuplicateRemove();
 		
 		
 	}
